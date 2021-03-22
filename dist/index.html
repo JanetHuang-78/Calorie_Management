@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://use.fontawesome.com/63184c16f5.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="narbar">
+        <p>Your Calorie Management</p>
+        <div class="clear">
+            <a href="#">Clear All</a>
+        </div>
+        <div class="time">
+            <p></p>
+        </div>
+    </div>
+
+    <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-image-1 active">
+              <!-- <div class="container"> -->
+                <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                  <h1 class="display-3 text-info">Healthy</h1>
+                  <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p> -->
+                  <!-- <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a> -->
+                </div>
+              <!-- </div> -->
+            </div>
+    
+            <div class="carousel-item carousel-image-2">
+              <!-- <div class="container"> -->
+                <div class="carousel-caption d-none d-sm-block mb-5">
+                  <h1 class="display-3 text-info">Laughing</h1>
+                  <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p> -->
+                  <!-- <a href="#" class="btn btn-primary btn-lg">Learn More</a> -->
+                </div>
+              <!-- </div> -->
+            </div>
+    
+            <div class="carousel-item carousel-image-3">
+              <!-- <div class="container"> -->
+                <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                  <h1 class="display-3 text-info">Confident</h1>
+                  <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p> -->
+                  <!-- <a href="#" class="btn btn-success btn-lg">Learn More</a> -->
+                </div>
+              <!-- </div> -->
+            </div>
+            <div class="carousel-item carousel-image-4">
+                <!-- <div class="container"> -->
+                  <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                    <h1 class="display-3 text-info">Exercise</h1>
+                    <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                      quod aliquid inventore vero perspiciatis.</p> -->
+                    <!-- <a href="#" class="btn btn-success btn-lg">Learn More</a> -->
+                  </div>
+                <!-- </div> -->
+              </div>
+              
+          </div>
+    
+          <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+    
+          <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+      
+
+    <div class="container">
+        <form>
+            
+            <h1>Add Meal/Food items</h1>
+            <div class="meal">
+                <label for="meal">Meal</label>
+                <input type="text" id="meal">
+            </div>
+            <div class="calories">
+                <label for="cal">calories</label>
+                <input type="number" id="cal">
+            </div>
+            <!-- <input type="submit" value="+ Add Meal" class="btn"> -->
+            <div class="buttons">
+                <div class="btn add">
+                    <a href="#"><i class="fa fa-plus" ></i> Add Meal</a>
+                </div>
+                <div class="btn edit">
+                    <a href="#"><i class="fa fa-edit"></i> Edit Meal</a>
+                </div>
+                <div class="btn del">
+                    <a href="#"><i class="fa fa-trash"></i> Del Meal</a>
+                </div>
+                <div class="btn back">
+                    <a href="#"><i class="fa fa-chevron-circle-left"></i> Back</a>
+                </div>
+            </div>
+        </form>
+        <div class="calculate">
+            <h1>Total Calories: <span class="showCal">0</span></h1>
+        </div> 
+        <div class="collection">   
+            <ul class="display">
+                <!-- <li>Cookies: <span>500</span><a href="#"><i class="fa fa-edit"></a></i></li>
+                <li>Candy: <span>300</span><a href="#"><i class="fa fa-edit"></a></i></li>
+                <li>Banana: <span>100</span><a href="#"><i class="fa fa-edit"></a></i></li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+     
+      // Configure Slider
+      $('.carousel').carousel({
+        interval: 3000,
+        pause: 'hover'
+      });
+  
+    </script>
+
+  </body>
+</html>
